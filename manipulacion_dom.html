@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion de DOM y Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <!-- Formulario de datos -->
+        <form id="userForm">
+            <label for="name">Nombre: </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Edad: </label>
+            <input type="number" id="age" name="age" required>
+
+            <button type="button" id="saveButton">Guardad Datos.</button>
+            <button type="button" id="clearButton">Limpiar datos</button>
+        </form>
+
+        <!-- Mensaje y resultados -->
+        <div id="mensaje" class="mensaje"></div>
+        <div id="output"></div>
+        <div id="interactionCount"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* ============================
+    -ROOT
+============================= */
+:root {
+    --color-fondo1: #EDEDE9;
+    --color-fondo2: #D6CCC2;
+    --color-formulario: #F5EBE0;
+    --color-eliminar: #a94442;
+    --color-acento: #D5BDAF;
+    --color-texto: #333;
+}
+
+/* ============================
+    -ESTILOS GENERALES
+============================= */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, var(--color-fondo1), var(--color-fondo2));
+    color: var(--color-texto);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+/* ============================
+    -CONTENEDOR CENTRAL
+============================= */
+.container {
+    background-color: var(--color-formulario);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    width: 100%;    
+    max-width: 400px;
+}
+
+/* ============================
+    -FORMULARIO Y CAMPOS
+============================= */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.3rem;
+}
+
+input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* ============================
+    -BOTONES
+============================= */
+button {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#saveButton {
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+}
+
+#clearButton {
+    background-color: var(--color-eliminar);
+    color: var(--color-texto);
+}
+
+/* ============================
+    -MENSAJES Y RESULTADOS
+============================= */
+#output,
+#interactionCount,
+#mensaje {
+  margin-top: 1rem;
+}
+
+.mensaje {
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.mensaje.success {
+  color: #3c763d;
+}
+
+.mensaje.error {
+  color: #a94442;
+}
