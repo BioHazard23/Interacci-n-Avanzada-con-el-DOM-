@@ -36,7 +36,7 @@
 # Como usarlo
 
     1. Clona o descarga este repositorio
-        link repo: 
+        link repo: https://github.com/BioHazard23/Interacci-n-Avanzada-con-el-DOM-.git
 
     2. Abre el archivo "manipulacion_dom.html"
 
